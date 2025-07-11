@@ -13,14 +13,14 @@ public class ToDoList {
     }
 
     //method to add new task
-    public void addTask(String task){
+    public void addTasks(String task){
         ToDoItem newItem=new ToDoItem(nextId++,task);
         items.add(newItem);
         System.out.println("Task added : " + task);
     }
 
     //
-    public void removeTask(int id){
+    public void removeTasks(int id){
         items.removeIf(item -> item.getId() == id);
         System.out.println("Task removed with ID : " + id);
     }
